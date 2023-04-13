@@ -1,5 +1,41 @@
 console.log ('hello')
 
+// Quiz Questions
+
+const questionOne = {
+    question: ":",
+    answer: "",
+    options: ["", "", "", ""],
+  };
+
+  const questionTwo = {
+    question: ":",
+    answer: "",
+    options: ["", "", "", ""],
+  };
+
+  const questionThree = {
+    question: ":",
+    answer: "",
+    options: ["", "", "", ""],
+  };
+
+  const questionFour = {
+    question: ":",
+    answer: "",
+    options: ["", "", "", ""],
+  };
+
+  const questionFive = {
+    question: ":",
+    answer: "",
+    options: ["", "", "", ""],
+  };
+
+  const questionBank = [
+    questionOne, questionTwo, questionThree, questionFour, questionFive,
+  ];
+  
 // Start by pressing button to start quiz and timer
     // Create start button click event
 

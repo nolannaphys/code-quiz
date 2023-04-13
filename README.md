@@ -1,3 +1,27 @@
+# coding-quiz
+
+## Description
+
+The purpose of this project was to create a timed coding quiz that saves the results and initials of the participant in local storage.
+
+## Installation
+
+N/A
+
+## Usage
+
+![Screenshot of the Webpage]()
+
+Begin the quiz by pressinf start. You will then have 99 seconds to complete 5 questions. When you finish the final question a score will be displayed and you will be prometed to save your score with your initials.
+
+## Credits
+
+N/A
+
+## License
+
+Please refer to the LICENSE in the repo.
+
 <!-- # code-quiz
 # 04 Web APIs: Code Quiz
 
