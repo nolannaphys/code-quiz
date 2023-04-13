@@ -10,6 +10,7 @@ var startButton = document.getElementById('startButton')
     // Have timer start with click event
     function timer(){
         console.log ('click')
+        
     }
     // Show questions section
     // Hide header section
@@ -20,6 +21,15 @@ var startButton = document.getElementById('startButton')
     // Move onto next question no matter the answer
 // Display results input and save button
     // Create a Save Score click event, have it save the input from text box and the quiz score --> save to local storage
+
+    function addInitialsForm () {
+      // // create
+      // var ;
+      // // modify
+      // ;
+      // // append
+      // ;
+    }
 // Display all scores
     // Have all scores saved in local storage display
 
