@@ -1,37 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timed Coding Quiz</title>
-</head>
-<body>
-    <header>
-        <h4 id='timer'>Timer</h4>
-        <h1>Coding Quiz</h1>
-        <button id="startButton">
-            Start
-        </button>
+<html>
+  <head>
+    <title>Code Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class = "headEl">
+      <div class= "large-font">Code Quiz Game</div>
+      <button class="start-button">Start</button>
     </header>
-        <section>
-            <h2>Question</h2>
-            <ul>
-                <!-- all need to be clickable -->
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Results</h2>
-            <input></input>
-            <button>Save Score</button>
-            <p>Quiz Score</p>
-            <p>Results</p>
-            <ul></ul>
-        </section>
-        <script src="./assets/js/script.js"></script>
-</body>
+
+    <main class = "quizEl">
+      <section>
+        <!-- this section contains the quiz questions and the answers -->
+        <div class="card" id="word-guess">
+          <div class="large-font word-blanks">You will have 30 seconds to answer as many questions as you can.</div>
+          <button class="answer1"> </button>
+          <button class="answer2"> </button>
+          <button class="answer3"> </button>
+          <button class="answer4"> </button>
+        </div>
+      </section>
+
+      <section>
+        <!-- this section contains the timer, as well as the score counter -->
+        <div class="card results">
+          <div class = "score-container">
+          <div>
+          <h2>Score: <span class="score">0</span></h2>
+        </div>
+      </div>
+          <div class= "card timer">
+            <div class = "timer-text">
+            <div class="large-font timer-count">15</div>
+            <h3>seconds remaining</h3>
+          </div>
+        
+          </div>
+        </div>
+      </section>
+    </main>
+    <form class="form-group">
+      <label for="exampleFormControlSelect1">Your score was <span class="score2">0</span> Please enter your initials</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option>
+        <option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option>
+        <option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option>
+        <option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option>
+        <option>Y</option><option>Z</option>
+      </select>
+      <select class="form-control" id="exampleFormControlSelect2">
+        <option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option>
+        <option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option>
+        <option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option>
+        <option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option>
+        <option>Y</option><option>Z</option>
+      </select>
+      <select class="form-control" id="exampleFormControlSelect3">
+        <option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option>
+        <option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option>
+        <option>M</option><option>N</option><option>O</option><option>P</option><option>Q</option><option>R</option>
+        <option>S</option><option>T</option><option>U</option><option>V</option><option>W</option><option>X</option>
+        <option>Y</option><option>Z</option>
+      </select>
+      <button type="submit" class="submit">Submit</button>
+    </form>
+    <!-- this form is hidden until the game ends, then appears to collect info from the player to save to the scoresheet -->
+
+      <button class="reset-button">Reset</button>
+
+      <button class="score-btn">High scores(top 2)</button>
+      <section id="highscores">
+        <h1>High scores</h1>
+        <ul id="scorelist">
+          <li class="high1">""</li>
+          <li class="high2">""</li>
+        </ul>
+      </section>
+      <!-- displays the top 2 scores on the game -->
+
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

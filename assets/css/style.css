@@ -1,0 +1,175 @@
+* {
+    box-sizing: border-box;
+  }
+  /* applies border box to the page and its children */
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background: linear-gradient(0deg, rgb(21, 107, 187) 0%, rgba(237,245,249,1) 63%);
+  }
+  /* sets a font family, sets a margin, sets the display to flex
+  sets the height minimum and sets a gradient for the background */
+  
+  .reset-button {
+    font-size: 16px;
+    height: 30px;
+    line-height: 8px;
+    margin-top: 20px;
+    display: none;
+  }
+  /*  sets the font-size, button hieght, and line height, as well as a top margin, then hides it from being displayed */
+  
+  .score-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  /* sets display flex, and adds a margin to the top */
+  
+  button {
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(33, 92, 187, 0.954) 100%);
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 2em;
+    letter-spacing: 0.21px;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 20px 52px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin-top: 0.6em;
+  }
+  /* sets a gradient for the background, sets a border radius, sets a color for the text, changes the type of cursor symbol on mouseover
+  sets the font size using em, sets the letter spacing, sets the lineheight, adds a maximum height using pixels, and a padding using pixels
+  centers the text, sets a duration for the transition when button is clicked and adds a bkg color, and sets a margin on the top */
+  
+  header {
+    padding: 40px;
+    text-align: center;
+    background: radial-gradient(circle, rgb(1, 7, 76) 0%, rgba(0, 0, 0, 0.604) 100%);
+    color: #fff;
+    border-bottom:30px #879274;
+  }
+  /* adds a padding around the header, centers the text, colors the text and background */
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  /* sets up display flex and sets a justify content for the <main> */
+  
+  section {
+    flex: 0 auto;
+    padding: 8px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  /* sets up flex properties, sets the padding using pixels, sets the top margin using pixels, set the background color, and sets the border radius using pixels */
+  
+  #word-guess {
+    width: 55vw;
+    height: 400px;
+  }
+  /*  sets up a height and a width for the section containing the quiz */
+  
+  
+  .results {
+    width: 30vw;
+    height: 400px;
+  }
+  /* sets up a height and a width for the section containing the score */
+  
+  
+  .card {
+    color: #eceff1;
+    background: radial-gradient(circle, rgb(28, 45, 238) 0%, rgba(2, 0, 12, 0.604) 100%);
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: auto;
+    padding: 20px;
+  }
+  /* sets a radial background gradient, sets up a border, with size style and color, sets a border radius using pixels
+  sets up a box shadow effect, sets the margin to auto, and adds padding to this section using pixels */
+  
+  
+  .large-font {
+    font-size: 3.5em;
+    text-align:center;
+  }
+  /* centers the text, and sets up a font size */
+  
+  
+  .timer {
+    height: 240px;
+    padding: 10px;
+    background: #13293d;
+    color: #fff;
+    text-align: center;
+  }
+  /* sets up a height for the timer, adds a padding using pixels, adds a color for the text and bkg, and centers the text */
+  
+  
+  .timer-text {
+    padding: 55px;
+  }
+  /* adds padding to the timer-text class */
+  
+  
+  .form-group {
+    display: none;
+  }
+  /* hides the form */
+  
+  
+  #highscores{
+    display: none;
+  }
+  /* hides the highscores area as a default*/
+  
+  
+  @media screen and (max-width: 1183px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .word-guess,
+    .results {
+      width: 90vw;
+    }
+  
+    section {
+      background-color: white;
+      margin: 20px auto;
+      width: 92vw;
+    }
+  }
+  /* changes the flex type of the body, changes the width of certain aspects, changes background color and margins of <section>s*/
+  
+  @media screen and (max-width: 504px) {
+    .large-font {
+      font-size: 2em;
+    }
+  
+    .reset-button {
+      font-size: 12px;
+      width: 20ox;
+      
+    }
+  
+    .timer {
+      height: 200px;
+    }
+  }
+  /* changes font size, and the width/height as viewport size is changed*/
